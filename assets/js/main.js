@@ -79,7 +79,6 @@ let computerChoice2 = () => {
 //TODO
 // Restart Button
 //TODO
-// -> https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript
 // location.reload();
 // return false;
 
