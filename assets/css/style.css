@@ -1,0 +1,7 @@
+.reloadBtn {
+  cursor: pointer;
+}
+
+.playedRounds {
+  display: flex;
+}

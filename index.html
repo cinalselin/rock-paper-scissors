@@ -22,6 +22,11 @@
             <input type="radio" name="rounds" id="twentyRounds" value="20">
             <label for="twentyRounds">20</label>
         </form>
+        <div class="playedRounds">
+            <p id="playedRounds">0</p>
+            <p>/</p>
+            <p id="pickedRound"> 0</p>
+        </div>
         <!-- Game score -->
         <div id="score">
             <p id="scoreUser">0</p>
@@ -39,7 +44,9 @@
             <button type="submit" id="paper" value="paper">paper</button>
             <button type="submit" id="scissors" value="scissors">scissors</button>
         </div>
-
+        <div id="reload">
+            <p class="reloadBtn">Restart Game</p>
+        </div>
 
     </main>
     <script src="./assets/js/main.js"></script>
