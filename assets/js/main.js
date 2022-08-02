@@ -1,18 +1,12 @@
 // ---------------------------------- VARIABLE ----------------------------------
+
 // Variables Buttons rock, paper, scissors
 const userBtn = document.querySelectorAll("button");
 
-const rock = document.getElementById("rock").value;
-const paper = document.getElementById("paper").value;
-const scissors = document.getElementById("scissors").value;
-
 // Variables Rounds
-const fiveRounds = document.getElementById("fiveRounds");
-const tenRounds = document.getElementById("tenRounds");
-const fifteenRounds = document.getElementById("fifteenRounds");
-const twentyRounds = document.getElementById("twentyRounds");
+const selectRound = document.querySelectorAll("input");
 
-// Variables for rounds //TODO
+// Variables for rounds
 const playedRounds = document.getElementById("playedRounds");
 const pickedRound = document.getElementById("pickedRound");
 let roundsDisplay = 0;
@@ -81,13 +75,21 @@ let computerChoice2 = () => {
   determineWinner();
 };
 
-// //TODO Function for rounds? How many rounds?
-// If amount of clicks = value of selected radio button -> then stop the game and show the winner
+// ---------------------------------- FUNCTION Rounds ----------------------------------
+
+selectRound.forEach((r) => {
+  r.addEventListener("change", (event) => {
+    event.preventDefault();
+    console.log(+event.target.value);
+    pickedRound.innerText = event.target.value;
+  });
+});
 
 let selectRounds = () => {
-  if (roundsDisplay === 5) {
-    console.log("EndGAME");
-    endGame();
+  if (roundsDisplay == pickedRound.innerText) {
+    console.log("GAME OVER");
+    // endGame();
+    //TODO write endGame() function -> if 5/5 or 10/10 etc. -> then Display Winner with innerhtml (computerScore < userScore then xy.. ), and restart/ reload page after 3-5 seconds?
   }
 };
 
