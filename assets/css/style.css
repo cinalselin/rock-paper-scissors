@@ -1,7 +1,215 @@
-.reloadBtn {
-  cursor: pointer;
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;600;700;800&display=swap");
+
+:root {
+  --mainBlue: #1b48c6;
+  --yellow: #ffd000;
+  --orange: #ff6230;
+  --turkis: #21cfcb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--mainBlue);
+  font-family: "Albert Sans", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  color: var(--yellow);
+  font-weight: 800;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  background-color: red;
+  width: 80px;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------------------------- Header---------------------------------- */
+
+header {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+h1 span:first-of-type {
+  color: var(--turkis);
+  font-weight: 800;
+}
+
+h1 span:last-of-type {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+/* ---------------------------------- Form: Rounds ---------------------------------- */
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+.containerForm {
+  margin-top: 40px;
 }
 
 .playedRounds {
+  font-size: 3rem;
+  font-weight: 700;
   display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.playedRounds p:nth-of-type(2) {
+  margin: 0 5px;
+}
+
+/* ---------------------------------- Score---------------------------------- */
+
+#score {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 45% 10px 45%;
+}
+
+#score p {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#score span {
+  display: flex;
+  align-items: flex-end;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+#score p {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+#userChoice,
+#compChoice {
+  font-size: 0.75rem;
+}
+
+/* ---------------------------------- Display Winner and Weapon---------------------------------- */
+
+#resultQuote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#resultQuote div:first-of-type {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* ---------------------------------- RPS Buttons---------------------------------- */
+
+#weapons {
+  margin-top: 50px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+#weapons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#weapons div:nth-of-type(1) h4 {
+  color: var(--yellow);
+}
+
+#weapons div:nth-of-type(2) h4 {
+  padding-right: 20px;
+  color: var(--turkis);
+}
+
+#weapons div:nth-of-type(3) h4 {
+  color: var(--orange);
+}
+
+#weapons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#rock {
+  background: url(../img/rock-vector.svg) no-repeat center;
+  background-size: cover;
+  height: 220px;
+  width: 100px;
+}
+
+#paper {
+  background: url(../img/paper-vector.svg) no-repeat center;
+  background-size: cover;
+  height: 220px;
+  width: 100px;
+}
+
+#scissors {
+  background: url(../img/scissors-vector.svg) no-repeat center;
+  background-size: cover;
+  height: 220px;
+  width: 100px;
+}
+
+/* ---------------------------------- Restart Button---------------------------------- */
+
+#reload {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+}
+
+.reloadBtn {
+  cursor: pointer;
+  border-bottom: 1px solid red;
 }

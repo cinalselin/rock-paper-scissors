@@ -10,44 +10,73 @@
 </head>
 
 <body>
+    <header>
+        <h1>ROCK.<span>PAPER.</span><span>SCISSORS.</span> </h1>
+    </header>
     <main>
-        <!-- Rounds -->
-        <form>
-            <input type="radio" name="rounds" id="fiveRounds" value="5">
-            <label for="fiveRounds">5</label>
-            <input type="radio" name="rounds" id="tenRounds" value="10">
-            <label for="tenRounds">10</label>
-            <input type="radio" name="rounds" id="fifteenRounds" value="15">
-            <label for="fifteenRounds">15</label>
-            <input type="radio" name="rounds" id="twentyRounds" value="20">
-            <label for="twentyRounds">20</label>
-        </form>
-        <div class="playedRounds">
-            <p id="playedRounds">0</p>
-            <p>/</p>
-            <p id="pickedRound"> 0</p>
-        </div>
-        <!-- Game score -->
-        <div id="score">
-            <p id="scoreUser">0</p>
-            <span>:</span>
-            <p id="scoreComp">0</p>
-        </div>
-        <!-- Description / Choice-->
-        <div id="resultQuote">
-            <h2 id="userChoice">Let's Play</h2>
-            <h2 id="compChoice"></h2>
-        </div>
-        <!-- Rock, Paper, Scissors Buttons -->
-        <div id="weapons">
-            <button type="submit" id="rock" value="rock">rock</button>
-            <button type="submit" id="paper" value="paper">paper</button>
-            <button type="submit" id="scissors" value="scissors">scissors</button>
-        </div>
-        <div id="reload">
-            <p class="reloadBtn">Restart Game</p>
-        </div>
+        <section>
+            <!-- Rounds -->
+            <div class="containerForm">
+                <h2>How many rounds? </h2>
+                <form>
+                    <input type="radio" name="rounds" id="fiveRounds" value="5">
+                    <label for="fiveRounds">5</label>
+                    <input type="radio" name="rounds" id="tenRounds" value="10">
+                    <label for="tenRounds">10</label>
+                    <input type="radio" name="rounds" id="fifteenRounds" value="15">
+                    <label for="fifteenRounds">15</label>
+                    <input type="radio" name="rounds" id="twentyRounds" value="20">
+                    <label for="twentyRounds">20</label>
+                </form>
+                <div class="playedRounds">
+                    <p id="playedRounds">0 </p>
+                    <p>|</p>
+                    <p id="pickedRound"> 0 </p>
+                </div>
+            </div>
+            <!-- Game score -->
+            <div id="score">
+                <div>
+                    <h3>You</h3>
+                    <p id="scoreUser">0</p>
+                    <h2 id="userChoice"></h2>
 
+                </div>
+                <div>
+                    <h3>Comp</h3>
+                    <p id="scoreComp">0</p>
+                    <h2 id="compChoice"></h2>
+
+                </div>
+            </div>
+            <!-- Description / Choice-->
+            <div id="resultQuote">
+                <div>
+                </div>
+                <div>
+                    <h2 id="winnerDisplay">Let's Start!<br> Who will win the game?</h2>
+                    <h2 id="determineWinner"></h2>
+                </div>
+            </div>
+            <!-- Rock, Paper, Scissors Buttons -->
+            <div id="weapons">
+                <div>
+                    <button type="submit" id="rock" value="rock"></button>
+                    <h4>Rock</h4>
+                </div>
+                <div>
+                    <button type="submit" id="paper" value="paper"></button>
+                    <h4>Paper</h4>
+                </div>
+                <div>
+                    <button type="submit" id="scissors" value="scissors"></button>
+                    <h4>Scissors</h4>
+                </div>
+            </div>
+            <div id="reload">
+                <p class="reloadBtn">Restart</p>
+            </div>
+        </section>
     </main>
     <script src="./assets/js/main.js"></script>
 </body>
