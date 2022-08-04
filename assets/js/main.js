@@ -43,7 +43,6 @@ let computerChoice2 = () => {
   compChoice.innerText = comp;
 
   // Compare the two choices, determine a winner AND display the results.
-  // TODO Color change
 
   let determineWinner = () => {
     if (comp === userChoice.innerText) {
@@ -58,8 +57,6 @@ let computerChoice2 = () => {
       displayScoreComp.innerText = computerScore;
       winnerDisplay.innerText = `Computer won!`;
       winnerDisplay.style.color = "#ff6230";
-
-      // document.body.style.backgroundColor = "red";
     } else if (
       (userChoice.innerText === "paper" && comp === "rock") ||
       (userChoice.innerText === "scissors" && comp === "paper") ||
@@ -69,8 +66,6 @@ let computerChoice2 = () => {
       displayScoreUser.innerText = userScore;
       winnerDisplay.innerText = `You won!`;
       winnerDisplay.style.color = "#21cfcb";
-
-      // document.body.style.backgroundColor = "green";
     }
   };
   determineWinner();

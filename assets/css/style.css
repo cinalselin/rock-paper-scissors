@@ -13,6 +13,8 @@
   box-sizing: border-box;
 }
 
+/* ---------------------------------- General Styling---------------------------------- */
+
 body {
   background-color: var(--mainBlue);
   font-family: "Albert Sans", sans-serif;
@@ -87,7 +89,7 @@ label {
   margin: 0 5px;
 }
 
-/* ---------------------------------- Score---------------------------------- */
+/* ---------------------------------- Score ---------------------------------- */
 
 #score {
   padding: 10px;
