@@ -90,7 +90,7 @@ let selectRounds = () => {
 let endGame = () => {
   if (userScore < computerScore) {
     winnerDisplay.innerText = ``;
-    determineWinner.innerText = `YOU LOST!`;
+    determineWinner.innerText = `YOU LOST THE GAME!`;
     setTimeout(function () {
       window.location.reload();
     }, 2500);
