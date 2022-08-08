@@ -93,19 +93,19 @@ let endGame = () => {
     determineWinner.innerText = `YOU LOST!`;
     setTimeout(function () {
       window.location.reload();
-    }, 5000);
+    }, 2500);
   } else if (userScore > computerScore) {
     winnerDisplay.innerText = ``;
     determineWinner.innerText = `CONGRATULATIONS, YOU WON! `;
     setTimeout(function () {
       window.location.reload();
-    }, 5000);
+    }, 2500);
   } else {
     winnerDisplay.innerText = ``;
     determineWinner.innerText = `THIS GAME WAS A TIE!`;
     setTimeout(function () {
       window.location.reload();
-    }, 5000);
+    }, 2500);
   }
 };
 
